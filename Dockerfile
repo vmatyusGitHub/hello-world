@@ -1,6 +1,4 @@
 FROM alpine:latest
-ENV http_proxy http://10.158.100.108:8080
-ENV https_proxy https://10.158.100.108:8080
 
 RUN apk add --update py2-pip
 
