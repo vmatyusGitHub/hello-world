@@ -3,9 +3,9 @@ pipeline {
     stages {
         stage ('Build') {
             steps {
-                sh 'echo Hello World!'
-                sh 'pwd'
-                sh 'git -v'
+                sh 'echo Hello World! > test.txt'
+                sh 'git add test.txt'
+                sh 'ls'
             }
         }
     }
