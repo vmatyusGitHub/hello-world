@@ -5,7 +5,8 @@ pipeline {
             steps {
                 sh 'echo Hello World! > test.txt'
                 sh 'git add test.txt'
-                sh 'ls'
+                sh 'git status'
+                sh 'git commit'
             }
         }
     }
