@@ -4,11 +4,11 @@ pipeline {
         stage ('Build') {
             steps {
                 echo "${BRANCH_NAME}"
-                echo "${branch_name}"
+                echo "${JOB_NAME}"
+                echo "${JOB_BASE_NAME}"
                 sh 'echo Hello World! > test.txt'
                 sh 'git add test.txt'
                 sh 'git status'
-                sh 'git commit'
             }
         }
     }
